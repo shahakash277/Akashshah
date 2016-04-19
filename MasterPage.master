@@ -1,0 +1,429 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <title>Palak Optics</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/form.css" rel="stylesheet" type="text/css" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery1.min.js"></script>
+    <link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/m1.css" rel="stylesheet" type="text/css" media="all" />
+    <script>$(document).ready(function () { $(".megamenu").megamenu(); });</script>
+
+    <link href="css/menu.css" rel="stylesheet" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/form.css" rel="stylesheet" type="text/css" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery1.min.js"></script>
+<!-- start menu -->
+<link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/megamenu.js"></script>
+<script>$(document).ready(function () { $(".megamenu").megamenu(); });</script>
+<!--start slider -->
+    <link rel="stylesheet" href="css/fwslider.css" media="all">
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/css3-mediaqueries.js"></script>
+    <script src="js/fwslider.js"></script>
+<!--end slider -->
+<script src="js/jquery.easydropdown.js"></script>
+
+<!--start slider -->
+   <%-- <link rel="stylesheet" href="css/fwslider.css" media="all">
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/css3-mediaqueries.js"></script>
+    <script src="js/fwslider.js"></script>
+<!--end slider -->
+<script src="js/jquery.easydropdown.js"></script>--%>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+.searchtextbox {
+            border: none;
+            outline: none;
+            background: none;
+            font-size: 0.85em;
+            font-family: 'Exo 2', sans-serif;
+            color: #777;
+            width: 130px;
+            padding: 7px;
+            -webkit-apperance: none;
+            margin: 0;
+            -webkit-transition: all 0.5s ease-out;
+            -moz-transition: all 0.5s ease-out;
+            -ms-transition: all 0.5s ease-out;
+            -o-transition: all 0.5s ease-out;
+        }
+        .searchtextbox:focus {
+            width: 150px;
+        }
+        .searchbutton {
+            border: none;
+            text-indent: -9999px;
+            outline: none;
+            cursor: pointer;
+            background: url("../images/search.png") no-repeat 0px 3px;
+            width: 30px;
+            height: 25px;
+            padding: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table class="auto-style1">
+            <tr>
+                <td>
+
+                    <div class="header-top">
+                        <div class="wrap">
+                            <div class="cssmenu">
+                                <ul>
+                                   <li><a href="login.aspx">
+                            <asp:Label ID="lbllogin" runat="server" Text="Log In"></asp:Label></a></li>
+                                    |  	   
+                                    <li><a href="register.aspx">
+                            <asp:Label ID="lblsighup" runat="server" Text="Sigh Up"></asp:Label>
+                        </a></li> 
+                                    |
+					    <li><a href="checkout.aspx">
+                            <asp:Label ID="lblcheckout" runat="server" Text="Checkout"></asp:Label></a>
+                        </li>  | 	    
+					    <li><a href="booking.aspx">
+                            <asp:Label ID="Label1" runat="server" Text="Booking"></asp:Label></a>
+                        </li>
+                                    |
+					    
+					    
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="header-bottom">
+                        <div class="wrap">
+                            <div class="header-bottom-left">
+                                <div class="logo">
+                                    <a href="home.aspx">
+                                        <img src="images/logo.png" width="171" height="81" alt="" /></a>
+                                </div>
+				<div class="menu">
+	            <ul class="megamenu skyblue">
+			<li class="active grid"><a href="home.aspx">Home</a></li>
+			<li><a class="color4" href="#">women</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Brand</h4>
+								<ul>
+									<li><a href="product.aspx?ref=brand_id&id=18&gender=FEMALE">IDEE</a></li>
+									<li><a href="product.aspx?ref=brand_id&id=19&gender=FEMALE">FCUK</a></li>
+									<li><a href="product.aspx?ref=brand_id&id=20&gender=FEMALE">RAY BAN</a></li>
+									<li><a href="product.aspx?ref=brand_id&id=21&gender=FEMALE">FASTRACK</a></li>
+                                    <li><a href="product.aspx?ref=brand_id&id=22&gender=FEMALE">LEE COOPER</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Shape</h4>
+								<ul>
+									<li><a href="product.aspx?ref=shape_id&id=1&gender=FEMALE">Avator</a></li>
+									<li><a href="product.aspx?ref=shape_id&id=2&gender=FEMALE">Wayfarer</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Material</h4>
+								<ul>
+									<li><a href="product.aspx?ref=material_id&id=1&gender=FEMALE">Acetate</a></li>
+									<li><a href="product.aspx?ref=material_id&id=2&gender=FEMALE">Wood</a></li>
+								</ul>	
+							</div>												
+						</div>
+                        <div class="col1">
+							<div class="h_nav">
+								<h4>Frame Type</h4>
+								<ul>
+									<li><a href="product.aspx?ref=frame_type_id&id=1&gender=FEMALE">Full Rim</a></li>
+									<li><a href="product.aspx?ref=frame_type_id&id=2&gender=FEMALE">Rim Less</a></li>
+                                    <li><a href="product.aspx?ref=frame_type_id&id=3&gender=FEMALE">Half Rim</a></li>
+								</ul>	
+							</div>							
+						</div>
+					  </div>
+					</div>
+				</li>				
+				<li><a class="color5" href="#">Men</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Brand</h4>
+								<ul>
+									<li><a href="product.aspx?ref=brand_id&id=18&gender=MALE">IDEE</a></li>
+									<li><a href="product.aspx?ref=brand_id&id=19&gender=MALE">FCUK</a></li>
+									<li><a href="product.aspx?ref=brand_id&id=20&gender=MALE">RAY BAN</a></li>
+									<li><a href="product.aspx?ref=brand_id&id=21&gender=MALE">FASTRACK</a></li>
+                                    <li><a href="product.aspx?ref=brand_id&id=22&gender=MALE">LEE COOPER</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Shape</h4>
+								<ul>
+									<li><a href="product.aspx?ref=shape_id&id=1&gender=MALE">Avator</a></li>
+									<li><a href="product.aspx?ref=shape_id&id=2&gender=MALE">Wayfarer</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Material</h4>
+								<ul>
+									<li><a href="product.aspx?ref=material_id&id=1&gender=MALE">Acetate</a></li>
+									<li><a href="product.aspx?ref=material_id&id=2&gender=MALE">Wood</a></li>
+								</ul>	
+							</div>												
+						</div>
+                        <div class="col1">
+							<div class="h_nav">
+								<h4>Frame Type</h4>
+								<ul>
+									<li><a href="product.aspx?ref=frame_type_id&id=1&gender=MALE">Full Rim</a></li>
+									<li><a href="product.aspx?ref=frame_type_id&id=2&gender=MALE">Rim Less</a></li>
+                                    <li><a href="product.aspx?ref=frame_type_id&id=3&gender=MALE">Half Rim</a></li>
+								</ul>	
+							</div>							
+						</div>
+					  </div>
+					</div>
+				</li>
+                    
+				<li><a class="color4" href="#">ALL</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Brand</h4>
+								<ul>
+									<li><a href="product.aspx?ref=brand_id&id=18">IDEE</a></li>
+									<li><a href="product.aspx?ref=brand_id&id=19">FCUK</a></li>
+									<li><a href="product.aspx?ref=brand_id&id=20">RAY BAN</a></li>
+									<li><a href="product.aspx?ref=brand_id&id=21">FASTRACK</a></li>
+                                    <li><a href="product.aspx?ref=brand_id&id=22">LEE COOPER</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Shape</h4>
+								<ul>
+									<li><a href="product.aspx?ref=shape_id&id=1">Avator</a></li>
+									<li><a href="product.aspx?ref=shape_id&id=2">Wayfarer</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Material</h4>
+								<ul>
+									<li><a href="product.aspx?ref=material_id&id=1">Acetate</a></li>
+									<li><a href="product.aspx?ref=material_id&id=2">Wood</a></li>
+								</ul>	
+							</div>												
+						</div>
+                        <div class="col1">
+							<div class="h_nav">
+								<h4>Frame Type</h4>
+								<ul>
+									<li><a href="product.aspx?ref=frame_type_id&id=1">Full Rim</a></li>
+									<li><a href="product.aspx?ref=frame_type_id&id=2">Rim Less</a></li>
+                                    <li><a href="product.aspx?ref=frame_type_id&id=3">Half Rim</a></li>
+								</ul>	
+							</div>							
+						</div>
+					  </div>
+					</div>
+                    
+				</li>
+				<%--<li><a class="color7" href="other.html">Purchase</a></li>--%>
+			</ul>
+                    </div>
+                                </div>
+                    <div class="header-bottom-right">
+                        <div class="search">
+
+                            <asp:TextBox ID="TextBox1" CssClass="searchtextbox" runat="server"></asp:TextBox>
+                            <asp:Button ID="Button1" CausesValidation="false" runat="server" CssClass="searchbutton" Text="Button" OnClick="Button1_Click" />
+                        </div>
+                        <div class="tag-list">
+                         
+                            <ul class="icon1 sub-icon1 profile_img">
+                                <li><a class="active-icon c2" href="checkout.aspx"></a>
+                                    <ul class="sub-icon1 list">
+                                     <a href="checkout.aspx">
+                                     <p style="text-align: center">   your item is <asp:Label ID="lblitem" Text="0" runat="server" ></asp:Label>
+                                         <br /> price is <asp:Label ID="lblprice" runat="server" Text="0" ></asp:Label>&nbsp;<asp:Image ID="Image1" ImageUrl="~/fonts/Indian_Rupee_Symbol.png" Height="10px" Width="10px" runat="server" />
+                          
+                                    </p> </a>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="last">
+                                <li><a href="checkout.aspx">Cart(<asp:Label ID="lblitem1" runat="server" Text="0"></asp:Label>)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td>
+   <div class="footer">
+		<div class="footer-top">
+			<div class="wrap">
+			  <div class="section group example">
+				<div class="col_1_of_2 span_1_of_2">
+					<ul class="f-list">
+					  <li><img src="images/2.png"><span class="f-text">Free Shipping And Cash On Deliver </span><div class="clear"></div></li>
+					</ul>
+				</div>
+				<div class="col_1_of_2 span_1_of_2">
+					<ul class="f-list">
+					  <li><img src="images/3.png"><span class="f-text">Call us! +(91)-9426421211 </span><div class="clear"></div></li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+		      </div>
+			</div>
+		</div>
+		<div class="footer-middle">
+			<div class="wrap">
+		   <div class="section group example">
+			  <div class="col_1_of_f_1 span_1_of_f_1">
+				 <div class="section group example">
+				   <div class="col_1_of_f_2 span_1_of_f_2">
+				      <h3>Facebook</h3>
+						<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+						<div class="like_box">	
+							<div class="fb-like-box" data-href="https://www.facebook.com/palakoptic?fref=ts" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+						</div>
+ 				  </div>
+				  <div class="col_1_of_f_2 span_1_of_f_2">
+						<h3>From Twitter</h3>
+				       <div class="recent-tweet">
+							<div class="recent-tweet-icon">
+								<span> </span>
+							</div>
+							<div class="recent-tweet-info">
+								<p> which don't look even slightly believable. If you are <a href="www.twitter.com">Follow us On Twitter</a> And Know More About Our Products</p>
+							</div>
+							<div class="clear"> </div>
+					   </div>
+					   <div class="recent-tweet">
+							<div class="recent-tweet-icon">
+								<span> </span>
+							</div>
+							<div class="recent-tweet-info">
+								<p>To See Our Products And Our latest Products<a href="www.instagram.com">Follow Us On Instagram</a> We Upload Our latest Products there</p>
+							</div>
+							<div class="clear"> </div>
+					  </div>
+				</div>
+				<div class="clear"></div>
+		      </div>
+ 			 </div>
+			 <div class="col_1_of_f_1 span_1_of_f_1">
+			   <div class="section group example">
+				 <div class="col_1_of_f_2 span_1_of_f_2">
+				    <h3>Information</h3>
+						<ul class="f-list1">
+						    <li><a href="home.aspx">Home</a></li>
+				            <li><a href="feedback.aspx">Feedback </a></li>
+				            <li><a href="booking.aspx">Booking</a></li>
+				             <li><a href="register.aspx">Sign Up</a></li>
+				            <li><a href="login.aspx">Login</a></li>
+				            <li><a href="gallery.aspx">Gallery</a></li>
+			         	</ul>
+ 				 </div>
+				 <div class="col_1_of_f_2 span_1_of_f_2">
+				   <h3>Contact us</h3>
+						<div class="company_address">
+					                <p> G4 Yash Aqua Building, Below ,</p>
+							   		<p>Macdonald, Vijay Cross Road, </p>
+							   		<p>Navrangpura, Ahmedabad - 380009</p>
+					   		<p>Phone: +(91)-79-31901007, 31901006,<br /> 
+                                    +(91)-9426421211, 9879010013
+                                    </p>
+					   		<p>Email: <span>contact@palakoptics.com</span></p>
+					   		
+					   </div>
+					   <div class="social-media">
+						     <ul>
+						        <li> <span class="simptip-position-bottom simptip-movable" data-tooltip="Google"><a href="https://plus.google.com/111939855219407485401/about" target="_blank"> </a></span></li>
+			         <li><span class="simptip-position-bottom simptip-movable" data-tooltip="Linked in"><a href="#" target="_blank"> </a> </span></li>
+						        <li><span class="simptip-position-bottom simptip-movable" data-tooltip="Rss"><a href="#" target="_blank"> </a></span></li>
+						        
+                                 <li><span class="simptip-position-bottom simptip-movable" data-tooltip="Facebook"><a href="https://www.facebook.com/palakoptic?fref=ts" target="_blank"> </a></span></li>
+						    </ul>
+					   </div>
+				</div>
+				<div class="clear"></div>
+		    </div>
+		   </div>
+		  <div class="clear"></div>
+		    </div>
+		  </div>
+		</div>
+		<div class="footer-bottom">
+			<div class="wrap">
+	             <div class="copy">
+			        <p>© PalakOptics 2014. All Rights Are Reserved</p>
+		         </div>
+				<div class="f-list2">
+				 <ul>
+					<li class="active"><a href="about.html">About Us</a></li> |
+					<li><a href="delivery.html">Delivery & Returns</a></li> |
+					<li><a href="delivery.html">Terms & Conditions</a></li> |
+					<li><a href="feedback.aspx">Contact Us</a></li> 
+				 </ul>
+			    </div>
+			    <div class="clear"></div>
+		      </div>
+	     </div>
+	</div> 
+
+                </td>
+            </tr>
+        </table>
+        <div>
+        </div>
+    </form>
+</body>
+</html>
